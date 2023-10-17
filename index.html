@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-#purple{
-    color : purple;
-}
-
-.green{
-    color: green;
-}
-
-.blue{
-    color : blue;
-}
-</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1차시 실습</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+    </style>
+    <title>Chat GPT</title>
 </head>
-<body style="background-color: khaki">
-    <h2>이름 : 이상민</h2>
-    <div id = "purple">소개 : 컴퓨터학부 23학번 20살</div>
-    <div id = "purple">좋아하는 사진</div>
-    <ol>
-        <li>볼링</li>
-        <li>침대</li>
-    </ol>
-    <img src="./bowling.jpeg">
-    <img src="./bed.jpeg">
-    <h4>특기 : 만드는중...</h4>
-    <div class="green">장점 : 경청을 잘한다</div>
-    <div class="blue">단점 : 말을 빨리 하는 경향이 있다</div>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>ChatGPT Bot</h3>
+        </div>
+
+        <div class="info">
+            <a href="https://github.com/sladkt" target="_blanck">Sangmin</a>
+        </div>
+
+        <div class="chat-container">
+            <div id="chat-log"></div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="send a message.">
+            <button id="send-button">
+                <i class="fa-solid fa-paper-plane" id="button-icon"></i>
+            </button>
+        </div>
+    </div>
     
+    <script src="https://kit.fontawesome.com/b21778ad84.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
